@@ -3,66 +3,64 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
-    <header class="page_header">
-      <img src="/images/logo.png" width="140" height="70" class="logo" alt="логотип СITY OF SEDONA">
-      <nav class="nawigation">
+    <header>
+      <img src="/images/logo.png" class="logo" alt="логотип СITY OF SEDONA">
 
-        <ul class="nawigation_list">
-          <li class="navigation_item">
-            <a class="navigation_link" href="#">Главная</a>
+      <nav>
+        <ul class="nav_list">
+          <li class="nav_item">
+            <a href="#">Главная</a>
           </li>
-          <li class="navigation_item">
-            <a class="navigation_link" href="#">О Седоне</a>
+          <li class="nav_item">
+            <a href="#">О Седоне</a>
           </li>
-          <li class="navigation_item">
-            <a class="navigation_link" href="catalogs.html">Гостиницы</a>
+          <li class="nav_item">
+            <a href="catalogs.html">Гостиницы</a>
           </li>
-        </ul>
-
-        <ul class="navigation_list navigation_user">
-
-          <li class="navigation_item">
-            <a class="navigation_link" href="#">
-                <span class="visually_hiden">
-                Поиск
-                </span>
-            </a>
-          </li>
-
-          <li class="navigation_item">
-            <a class="navigation_link" href="#">
-              <span class="visually-hiden">Избраное</span>
-            </a>
-          </li>
-
-          <button class="header_btn">Хочу сюда!</button>
-
         </ul>
       </nav>
+
+
+        <ul class="navigation_user">
+
+          <li class="navigation_item">
+            <a class="navigation_link" href="#"><img src="/images/magnifier.png" alt="лупа">
+            </a>
+          </li>
+
+          <li class="navigation_item">
+            <a class="navigation_link" href="#"><img src="/images/heart.png" alt="избранное">
+            </a>
+          </li>
+
+          <button class="nav_btn">Хочу сюда!</button>
+
+        </ul>
     </header>
 
-    <main>
+    <main class="sedona_main">
       <img src="/images/welcome.png" widht="180" height="45" alt="welcome">
       <img src="/images/ttg.png"  width="250" height="30" alt="to the georges">
-      <img src="/images/sedona.svg" widht="400" height="212" alt="sedona logo">
+      <img src="/images/sedona.svg" widht="400" height="212" alt="sedona logo" class="vector_sedona">
     </main>
     <div class="cont1">
       <div class="sedona_descr">
-        <h2>Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h2>
-        <h3>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</h3>
+        <h2 class="text_bold">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h2>
+        <p class="text_normal">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
       </div>
     </div>
     <section>
       <div class="real_town">
         <ul>
           <li>
-            <h4>Настощий городок</h4>
+            <h3 class="text_bold">Настощий городок</h3>
           </li>
           <hr>
           <li>
-            Седона — не аттракцион для туристов,<br>там течёт своя<br> жизнь
+            <p class="text_normal">Седона — не аттракцион для туристов,<br>там течёт своя<br> жизнь</p>
           </li>
         </ul>
         <img src="/images/photo-1.jpg" width="800" height="384" alt="the town photo">
@@ -71,21 +69,21 @@
       <div class="pluse_of_town">
         <ul>
           <li>
-            <h4>Небольшая<br> площадь</h4>
+            <h3 class="text_bold">Небольшая<br> площадь</h3>
             <hr>
-            <p>Все достопримечательности находятся очень близко</p>
+            <p class="text_normal">Все достопримечательности находятся очень близко</p>
           </li>
 
           <li>
-            <h4>Красивая<br>дорога</h4>
+            <h3 class="text_bold">Красивая<br>дорога</h3>
             <hr>
-            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            <p class="text_normal">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
 
           <li>
-            <h4>Мало<br>туристов</h4>
+            <h3 class="text_bold">Мало<br>туристов</h3>
             <hr>
-            <p>Большинство едет в Гранд Каньон и толпится там</p>
+            <p class="text_normal">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
         </ul>
       </div>
@@ -94,40 +92,40 @@
         <ul>
           <img src="/images/photo-2.jpg" width="800" height="384" alt="brich photo">
           <li>
-            <h4>Там есть<br>Мост дьявола</h4>
+            <h3 class="text_bold">Там есть<br>Мост дьявола</h3>
           </li>
-          <p>Да, по нему можно пройти!<br> Если вы осмелитесь,<br> разумеется</p>
+          <p class="text_normal">Да, по нему можно пройти!<br> Если вы осмелитесь,<br> разумее3ся</p>
         </ul>
       </div>
       <div>
         <ul>
           <li>
             <img src="/images/home.png" width="75" height="72" alt="house img">
-            <h4>Жильё</h4>
-            <p>Рекомендуем пожить<br>в настоящем мотеле,<br> всё как в кино!</p>
+            <h3>Жильё</h3>
+            <p class="text_normal">Рекомендуем пожить<br>в настоящем мотеле,<br> всё как в кино!</p>
           </li>
           <li>
             <img src="/images/food.png" width="74" height="70" alt="food img">
-            <h4>Еда</h4>
-            <P>Всегда заказывайте<br>топовый фирменный бургер,<br>вы не разочаруетесь!</P>
+            <h3 class="text_bold">Еда</h3>
+            <P class="text_normal">Всегда заказывайте<br>топовый фирменный бургер,<br>вы не разочаруетесь!</P>
           </li>
           <li>
             <img src="/images/box.png" width="64" heght="76" alt="the surprise box img">
-            <h4>Сувениры</h4>
-            <p>Не только китайского,<br>но и настоящего местного<br> производства!</p>
+            <h3 class="text_bold">Сувениры</h3>
+            <p class="text_normal">Не только китайского,<br>но и настоящего местного<br> производства!</p>
           </li>
         </ul>
       </div>
     </section>
     <section>
-      <h4>Заинтересовались?</h4>
-      <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+      <h2 class="text_bold">Заинтересовались?</h2>
+      <p class="text_normal">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
       <button class="search_hotels_btn">ПОИСК ГОСТИНИЦЫ В седоне</button>
     </section>
     <section>
       <div class="subscription_1">
-        <h4>Подпишитесь на рассылку</h4>
-          <p>Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
+        <h2 class="text_bold">Подпишитесь на рассылку</h2>
+          <p class="text_normal">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
         <input type="email"  placeholder="Ваш e-mail"><button>Подписаться<button>
       </div>
     </section>

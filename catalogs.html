@@ -3,53 +3,51 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
-    <header class="page_header">
-      <img src="/images/logo.png"  width="140" height="70" class="logo" alt="логотип СITY OF SEDONA">
-      <nav class="nawigation">
+    <header>
+      <img src="/images/logo.png" class="logo" alt="логотип СITY OF SEDONA">
 
-        <ul class="nawigation_list">
-          <li class="navigation_item">
-            <a class="navigation_link" href="/index.html">Главная</a>
+      <nav>
+        <ul class="nav_list">
+          <li class="nav_item">
+            <a href="#">Главная</a>
           </li>
-          <li class="navigation_item">
-            <a class="navigation_link" href="#">О Седоне</a>
+          <li class="nav_item">
+            <a href="#">О Седоне</a>
           </li>
-          <li class="navigation_item">
-            <a class="navigation_link" href="#">Гостиницы</a>
+          <li class="nav_item">
+            <a href="catalogs.html">Гостиницы</a>
           </li>
-        </ul>
-
-        <ul class="navigation_list navigation_user">
-
-          <li class="navigation_item">
-            <a class="navigation_link" href="#">
-                <span class="visually_hiden">
-                Поиск
-                </span>
-            </a>
-          </li>
-
-          <li class="navigation_item">
-            <a class="navigation_link" href="#">
-              <span class="visually-hiden">Избраное</span>
-            </a>
-          </li>
-
-          <button class="header_btn">Хочу сюда!</button>
-
         </ul>
       </nav>
+
+        <ul class="navigation_user">
+
+          <li class="navigation_item">
+            <a class="navigation_link" href="#"><img src="/images/magnifier.png" alt="лупа">
+            </a>
+          </li>
+
+          <li class="navigation_item">
+            <a class="navigation_link" href="#"><img src="/images/heart.png" alt="избранное">
+            </a>
+          </li>
+
+          <button class="nav_btn">Хочу сюда!</button>
+
+        </ul>
     </header>
 
     <main>
-        <h1>Гостиницы Седоны</h1>
+      <div class="catalog_inputs">
+        <h1 class="text_bold">Гостиницы Седоны</h1>
         <img src="/images/homewector.png" width="13" height="15" alt="home img" class="visually-hiden">
-        <img src="/images/breadcrumbs.png" width="8" height="10" alt=">">Гостиницы
-
+        <img src="/images/breadcrumbs.png" width="8" height="10" alt=">"> <p class="text_normal">Гостиницы</p>
+      </div>
         <form>
-           <p>Тип жилья</p>
+           <p class="text_bold">Тип жилья</p>
               <input type="radio" value="hotel">
               <label for="hotel">Гостиница</label><br>
               <input type="radio"value="motel">
@@ -57,7 +55,7 @@
               <input type="radio" value="apartaments">
               <label for="apartaments">Апартаменты</label>
 
-           <p>Инфраструктура</p>
+           <p class="text_bold">Инфраструктура</p>
               <input type="checkbox" value="pool">
               <label for="pool"> Бассейн</label><br>
               <input type="checkbox" value="parking">
@@ -65,7 +63,7 @@
               <input type="checkbox" value="WI-fi">
               <label for="WI-fi"> WI-fi</label>
 
-            <p>Стоимость, ₽:</p>
+            <p class="text_bold">Стоимость, ₽:</p>
               <input type="number">
               <input type="number">
               <input type="range" min="0" max="10000" steps="9" value="8">
@@ -77,9 +75,9 @@
 
       <section>
         <div>
-          <h4>найдено гостиниц:38</h4>
+          <h4 class="text_bold">найдено гостиниц:38</h4>
           <select>
-            <option>Сначала дешевые</option>
+            <option class="text_normal">Сначала дешевые</option>
           </select>
           <button><img src="/images/trrrr.png" widht="40" height="40" alt="table view mode"></button>
           <button><img src="/images/monitor img.png" widht="40" height="40" alt="in the row mode"></button>
@@ -87,8 +85,9 @@
         </div>
         <article>
           <img src="/images/hotel-1.png" alt="Samara Resort & SPA">
-          <p>Гостиница</p>
-          <p>От 4000 ₽</p>
+          <h3 class="text_bold">Amara Resort & Spa</h3>
+          <p class="text_normal">Гостиница</p>
+          <p class="text_normal">От 4000 ₽</p>
           <button>Подробнее</button>
           <button>Избранное</button><br>
           <ul alt="4 star">
@@ -101,8 +100,9 @@
         </article>
         <article>
           <img src="/images/hotel-2.jpg" alt="Villas at Poco Diablo">
-          <p>Гостиница</p>
-          <p>От 5000 ₽</p>
+          <h3 class="text_bold">Villas at Poco Diablo</h3>
+          <p class="text_normal">Гостиница</p>
+          <p class="text_normal">От 5000 ₽</p>
           <button>Подробнее</button>
           <button>Избранное</button><br>
           <ul alt="4 star">
@@ -115,8 +115,9 @@
         </article>
         <article>
           <img src="/images/hotel-3.jpg" alt="Desert Quail Inn">
-          <p>Гостиница</p>
-          <p>От 2500 ₽</p>
+          <h3 class="text_bold">Desert Quail Inn</h3>
+          <p class="text_normal">Гостиница</p>
+          <p class="text_normal">От 2500 ₽</p>
           <button>Подробнее</button>
           <button>Избранное</button><br>
           <ul alt="3 star">
@@ -128,8 +129,9 @@
         </article>
         <article>
           <img src="/images/hotel-4.jpg" alt="GreenTree Inn">
-          <p>Гостиница</p>
-          <p>От 1500 ₽</p>
+          <h3 class="text_bold">GreenTree Inn</h3>
+          <p class="text_normal">Гостиница</p>
+          <p class="text_normal">От 1500 ₽</p>
           <button>Подробнее</button>
           <button>Избранное</button><br>
           <ul alt="2 star">
@@ -144,8 +146,8 @@
         <button>1</button><button>2</button><button>3</button><button>4</button><p>...</p><button>10</button>
       </section>
       <section class="subscription_2">
-        <h4>Подпишитесь на рассылку</h4>
-          <p>Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
+        <h4 class="text_bold">Подпишитесь на рассылку</h4>
+          <p class="text_normal">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
         <input type="email"  placeholder="Ваш e-mail"><button>Подписаться</button>
       </section>
 

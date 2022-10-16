@@ -1,0 +1,85 @@
+@font-face {
+    font-family: "PT Sans";
+    src: url("/fonts/ptsans-400.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+  }
+@font-face {
+    font-family: "PT Sans Bold";
+    src: url("/fonts/ptsans-700.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+  }
+.text_normal{
+    font-family: "PT Sans";
+}
+.text_bold{
+    font-family: "PT Sans Bold";
+}
+
+body{
+    margin:50;
+    padding:0;
+}
+header{
+    display: flex;
+    width: 100%;
+}
+nav{
+    display: flex;
+    align-items: center;
+}
+nav .nav_list{
+    display: flex;
+    list-style: none;
+}
+nav .nav_list .nav_item a{
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    margin-left: 32px;
+}
+.logo{
+    height: 64px;
+    width: 138px;
+}
+.navigation_user{
+    margin-left: 560px;
+    display: flex;
+    list-style: none;
+}
+.navigation_user .navigation_item{
+    display: flex;
+    align-items: center;
+    margin-left: 27px;
+}
+.nav_btn{
+    margin-left: 27px;
+    background-color: #756157;
+    width: 160px;
+    height: 36px;
+    cursor: pointer;
+    color: white;
+    text-transform: uppercase;
+    font-family: "PT Sans Bold";
+}
+.vector_sedona{
+    width: 95%;
+    height: 160px;
+    padding-bottom: 120px;
+    display: flex;
+}
+.sedona_main{
+    background: url(/images/sedona\ bgr.jpg) center center/cover no-repeat;
+    width: 100%;
+    height: 340px;
+    padding-bottom: 10px;
+}
+.subscription_1{
+    background: url(/images/Subscribe.png) center center/cover no-repeat;
+}
+.catalog_inputs{
+    background: url(/images/filter.png) center center/cover no-repeat;
+}
