@@ -3,24 +3,53 @@
     src: url("/fonts/ptsans-400.woff2") format("woff2");
     font-weight: 400;
     font-style: normal;
-  }
+}
 @font-face {
     font-family: "PT Sans Bold";
     src: url("/fonts/ptsans-700.woff2") format("woff2");
     font-weight: 700;
     font-style: normal;
-  }
+}
+*{
+    font-family: "PT Sans";
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0 30px;
+}
+ul {
+    list-style: none;
+}
+.border_bot{
+    border-bottom: solid;
+    border-color: #756257;
+}
+.hr_grey{
+    width: 60px;
+    height: 2px;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.hr_white{
+    width: 60px;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.3);
+}
 .text_normal{
     font-family: "PT Sans";
 }
 .text_bold{
     font-family: "PT Sans Bold";
 }
-
-body{
-    margin:50;
-    padding:0;
+.custom_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 15px;
 }
+
+
 header{
     display: flex;
     width: 100%;
@@ -64,22 +93,586 @@ nav .nav_list .nav_item a{
     color: white;
     text-transform: uppercase;
     font-family: "PT Sans Bold";
+    border-radius: 8px;
+    border: none;
 }
-.vector_sedona{
-    width: 95%;
-    height: 160px;
-    padding-bottom: 120px;
-    display: flex;
-}
-.sedona_main{
+
+.sedona_welcome{
     background: url(/images/sedona\ bgr.jpg) center center/cover no-repeat;
     width: 100%;
-    height: 340px;
-    padding-bottom: 10px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5%;
 }
-.subscription_1{
+.sedona_welcome .welcome{
+    margin-bottom: 15px;
+}
+.sedona_welcome .georges{
+    margin-bottom: 80px;
+}
+.index_sedona_header{
+    border-bottom: 4px black;
+}
+.advantages{
+    width: 100%;
+    display: flex;
+    height: 380px;
+}
+.advantages_one{
+    background-color: #82B3D3;
+    width: 33%;
+    text-align: center;
+    align-items: center;
+}
+.advantages_one h3{
+    font-size: 26px;
+    margin-top: 75px;
+    text-transform: uppercase;
+    color: white;
+}
+.advantages_one p{
+    color: white;
+    text-align: center;
+}
+.advantages_two{
+    width: 67%;
+    height: 380px;
+}
+.advantages_two img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.adventages_cards{
+    width: 100%;
+    height: 380px;
+    display: flex;
+    flex-direction: row;
+}
+.advantages_card_one{
+    background-color: #F0F6F9;
+    width: 33%;
+    height: 100%;
+}
+.advantages_card_one p{
+    color: black;
+    text-align: center;
+}
+.advantages_card_one h3{
+    text-align: center;
+    font-size: 32px;
+}
+.advantages_card_two{
+    background-color: #E6F0F6;
+    width: 34%;
+    height: 100%;
+}
+.advantages_card_two h3{
+    text-align: center;
+    font-size: 32px;
+}
+.advantages_card_two p{
+    color: black;
+    text-align: center;
+}
+.advantages_card_three{
+    background-color: #F0F6F9;
+    width: 33%;
+    height: 100%;
+}
+.advantages_card_three h3{
+    text-align: center;
+    font-size: 32px;
+}
+.advantages_card_three p{
+    color: black;
+    text-align: center;
+}
+.description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1503px;
+    height: 282px;
+}
+.description .sedona_descr{
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+.sedona_advantage{
+    width: 100%;
+}
+
+.devil_brich{
+    width: 100%;
+    display: flex;
+    height: 380px;
+}
+.devil_brich_one{
+    width: 67%;
+    height: 380px;
+}
+.devil_brich_one img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.devil_brich_two{
+    background-color: #82B3D3;
+    width: 33%;
+    align-items: center;
+}
+.devil_brich_two h3{
+    color: white;
+    text-align: center;
+    font-size: 26px;
+    margin-top: 75px;
+    text-transform: uppercase;
+}
+.devil_brich_two p{
+    color: white;
+    text-align: center;
+}
+.pluses_cards{
+    width: 100%;
+    display: flex;
+    height: 380px;
+    text-align: center;
+}
+.pluses_card_one{
+    background-color: #F0F6F9;
+    display: flex;
+    flex-direction: column;
+    width: 506px;
+    text-transform: uppercase;
+    font-weight: bold;
+    align-items: center;
+}
+.pluses_card_two{
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    width: 506px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.pluses_card_three{
+    background-color: #F0F6F9;
+    display: flex;
+    flex-direction: column;
+    width: 506px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.pluses_card_one img{
+    width: 75px;
+    height: 72px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+.pluses_card_two img{
+    width: 75px;
+    height: 72px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+.pluses_card_three img{
+    width: 75px;
+    height: 72px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+.pluses_cards p{
+    text-transform: none;
+}
+.search_hostel_sec{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 402px;
+}
+.search_hostel_sec h2{
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+.search_hostel_sec p{
+    text-transform: uppercase;
+    text-align: center;
+}
+.search_hostel_sec button{
+    text-transform: uppercase;
+    background-color: #756157;
+    cursor: pointer;
+    color: white;
+    width: 376px;
+    height: 52px;
+    font-family: "PT Sans Bold";
+    border-radius: 8px;
+    border: none;
+    margin-left: 50px;
+}
+
+.subscription{
     background: url(/images/Subscribe.png) center center/cover no-repeat;
+    height: 414px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.subscription h2{
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-size: 30px;
+    margin-top: 5%;
+}
+.subscription p{
+    text-align: center;
+    width: 30%;
+    color: white;
+    font-size: 20px;
+}
+.subscription_email{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.subscription_email input{
+    width: 35%;
+    height: 100%;
+}
+.subscription_email button{
+    width: 15%;
+    height: 100%;
+    background-color: #82B3D3;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.sedona_welcome_footer{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.social_networks{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    width: 142px;
+    height: 40px;
+}
+.social_networks a {
+    width: 90px;
+}
+.phone_number{
+    color: black;
+    text-decoration: none;
+    font-size: 40px;
+}
+
+.sedona_welcome_bottom-figure{
+    height: 50px;
+    width: 100%;
+    display: flex;
+}
+.sedona_welcome_bottom-figure .left_one{
+    width: 20%;
+    height: 100%;
+    clip-path: polygon(0 32%, 100% 91%, 100% 100%, 0% 100%);
+    background-color: white;
+}
+.sedona_welcome_bottom-figure .left_two{
+    width: 30%;
+    height: 100%;
+    clip-path: polygon(0 15%, 100% 90%, 100% 100%, 0% 100%);
+    background-color: white;
+}
+.sedona_welcome_bottom-figure .right_one{
+    width: 30%;
+    height: 100%;
+    clip-path: polygon(0 91%, 100% 15%, 100% 100%, 0% 100%);
+    background-color: white;
+}
+.sedona_welcome_bottom-figure .right_two{
+    width:20%;
+    height: 100%;
+    clip-path: polygon(0 91%, 100% 32%, 100% 100%, 0% 100%);
+    background-color: white;
+}
+
+
+
+.sub_header{
+    background: url("/images/filter.png") center center/cover no-repeat;
+    width: 100%;
+    height: 403px;
+    padding: 35px 70px 70px 70px;
 }
 .catalog_inputs{
-    background: url(/images/filter.png) center center/cover no-repeat;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sub_header h1{
+    color: white;
+    font-size: 60px;
+    margin: 0;
+}
+.catalog_inputs_elements{
+    width: 9%;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+}
+.catalog_inputs_elements >{
+    width: 10px;
+    height: 15px;
+}
+.catalog_inputs_elements .home{
+    width: 13px;
+    height: 15px;
+}
+.catalog_inputs_elements p{
+    color: white;
+    font-size: 100%;
+    display: contents;
+}
+
+.before_inputs{
+    width: 40%;
+    display: flex;
+    height: 25px;
+}
+.infrastructure{
+    color: white;
+    font-size: 20px;
+}
+.prise{
+    color: white;
+    font-size: 20px;
+}
+.housing_type{
+    color: white;
+    font-size: 20px;
+}
+.block_one ul{
+    display: contents;
+}
+.block_two ul{
+    display: contents;
+}
+.block_three{
+    width: 228px;
+    position: relative;
+}
+.inputs_block_three{
+    display: flex;
+}
+.block_three input{
+    width: 50%;
+    height: 48px;
+    border-radius: 6px;
+    border-style: none;
+}
+.slider_one{
+    position: absolute;
+    background-color: #5E676D;
+    width: 100%;
+    height: 1px;
+    top: 150px;
+}
+.slider_two{
+    position: absolute;
+    background-color: white;
+    width: 75%;
+    height: 1px;
+    top: 150px;
+}
+.slider_circle_left{
+    background-color: white;
+    border-radius: 5px;
+    position: absolute;
+    top: 140px;
+    width: 20px;
+    height: 20px;
+}
+.slider_circle_right{
+    background-color: white;
+    border-radius: 5px;
+    position: absolute;
+    top: 140px;
+    left: 155px;
+    width: 20px;
+    height: 20px;
+}
+.block_four{
+    width: 195px;
+    height: 104px;
+    display: grid;
+}
+main{
+   width: 100%;
+}
+.sedonahostels_apply{
+    height: 55%;
+    width: 100%;
+    background-color: #82B3D3;
+    border:none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 55px;
+}
+.sedonahostels_delete{
+    border: medium none;
+    background-image: none;
+    background: transparent;
+    float: left;
+    background-color: transparent;
+    color:white;
+    text-transform: uppercase;
+    margin-top: 85px;
+}
+.hostels{
+    width: 100%;
+    height: 1235px;
+}
+.hostels_buttons{
+    width: 160px;
+    height: 48px;
+    display: flex;
+}
+.hostels_buttons button{
+    width: 48px;
+    height: 48px;
+    background-color: white;
+    border-color: #E5E5E5;
+    margin-left: 10px;
+    box-shadow: none;
+}
+.hostels_buttons .black_border{
+    border-color: black;
+}
+.hostels_buttons img{
+    width: 16px;
+    height: 14px;
+}
+.hostel_search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 70px 40px 70px;
+}
+.hostel_search h2{
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.hostel_search select{
+    width: 292px;
+    height: 49px;
+    font-size: 18px;
+    color: #333333;
+    border-color: #E5E5E5;
+}
+.hostels_cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.brown_btn{
+    background: #756157;
+    border-radius: 4px;
+    border-style: none;
+    width: 140px;
+    height: 36px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 16px;
+}
+.blue_btn{
+    background: #82B3D3;
+    border-radius: 4px;
+    border-style: none;
+    width: 140px;
+    height: 36px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 16px;
+}
+.green_btn{
+    background: #7DB54F;
+    border-radius: 4px;
+    border-style: none;
+    width: 140px;
+    height: 36px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 16px;
+}
+.txt_inside_cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.hostels_card{
+    padding: 20px;
+    width: 340px;
+    height: 438px;
+    border: 5px solid  #E6E6E6;
+    border-color: #E6E6E6;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+}
+.hostels_card h3{
+    margin: 0;
+}
+.hostel_card_btns{
+    display: flex;
+    justify-content: space-between;
+}
+.rating{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.rating ul{
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.stars{
+    Width:18px;
+    Height:17px;
+}
+.rating_btn{
+    width: 140px;
+    height: 37px;
+    text-transform: uppercase;
+    margin-left: 75px;
+    border-radius: 4px;
+    border-style: none;
 }
