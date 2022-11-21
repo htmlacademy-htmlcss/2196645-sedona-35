@@ -477,6 +477,8 @@ nav .nav_list .nav_item a{
 }
 .block_one ul{
     display: contents;
+    Width: 40px;
+    Height: 40px;
 }
 .block_two ul{
     display: contents;
@@ -489,22 +491,23 @@ nav .nav_list .nav_item a{
     display: flex;
 }
 .block_three input{
-    width: 50%;
+    width: 143px;
     height: 48px;
     border-radius: 6px;
     border-style: none;
+    margin-left: 5px;
 }
 .slider_one{
     position: absolute;
     background-color: #5E676D;
-    width: 100%;
+    width: 287px;
     height: 1px;
     top: 150px;
 }
 .slider_two{
     position: absolute;
     background-color: white;
-    width: 75%;
+    width: 226px;
     height: 1px;
     top: 150px;
 }
@@ -521,7 +524,7 @@ nav .nav_list .nav_item a{
     border-radius: 5px;
     position: absolute;
     top: 140px;
-    left: 155px;
+    left: 215px;
     width: 20px;
     height: 20px;
 }
@@ -555,8 +558,7 @@ main{
     margin-top: 85px;
 }
 .hostels{
-    height: 896px;
-    padding: 50px 70px 60px;
+    padding: 50px 70px 0 70px;
 }
 .hostels_buttons{
     width: 160px;
@@ -656,6 +658,9 @@ main{
     display: flex;
     justify-content: space-between;
 }
+.hostels hr{
+    margin-top: 40px;
+}
 .rating{
     display: flex;
     flex-direction: row;
@@ -679,4 +684,89 @@ main{
     margin-left: 75px;
     border-radius: 4px;
     border-style: none;
+}
+.pages_btn{
+    width: 100%;
+    height: 60px;
+    padding: 15px 0 0 65px;
+    display: flex;
+}
+
+.pages_btn button{
+    width: 60px;
+    height: 60px;
+    background-color: #82B3D3;
+    border-style: none;
+    border-radius: 4px;
+    font-size: 20px;
+    color: white;
+    font-weight: 700;
+    margin-left: 8px;
+}
+.pages_btn .btn_one_white{
+    background-color: #F2F2F2;
+    font-size: 20px;
+    color: #000;
+    font-weight: 700;
+}
+.pages_btn p{
+    margin-left: 8px;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    font-size: 22px;
+}
+.catalogs_final_hr{
+    margin: 40px 70px;
+}
+.catalogs_subscription{
+    height: 414px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.catalogs_subscription_email{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.catalogs_subscription h2{
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    margin-top: 5%;
+    margin-bottom: 0;
+}
+.catalogs_subscription p{
+    text-align: center;
+    width: 30%;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    margin-bottom: 54px;
+}
+.catalogs_subscription_email input{
+    width: 35%;
+    height: 100%;
+    background-color: #F2F2F2;
+    border: 0;
+    border-radius: 5px 0 0 5px;
+    padding: 14px 20px 14px 20px;
+
+}
+.catalogs_subscription_email button{
+    width: 15%;
+    height: 100%;
+    background-color: #82B3D3;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+    border-radius: 0 5px 5px 0;
+    font-weight: 700;
 }
